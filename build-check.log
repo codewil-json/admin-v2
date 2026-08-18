@@ -1,0 +1,56 @@
+
+> admin@0.1.0 build
+> vue-cli-service build
+
+All browser targets in the browserslist configuration have supported ES module.
+Therefore we don't build two separate bundles for differential loading.
+
+
+-  Building for production...
+ WARNING  Compiled with 3 warnings00:23:13
+
+[eslint] 
+/home/wil/Desenvolvimento/wilsonacioli/admin/src/views/LoginView.vue
+  93:5  warning  Unexpected console statement  no-console
+  97:5  warning  Unexpected console statement  no-console
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+You may use special comments to disable some warnings.
+Use // eslint-disable-next-line to ignore the next line.
+Use /* eslint-disable */ to ignore all warnings in a file.
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  css/chunk-vendors.1afdac86.css (304 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (519 KiB)
+      css/chunk-vendors.1afdac86.css
+      js/chunk-vendors.21b44042.js
+      css/app.0541e1ac.css
+      js/app.417bf278.js
+
+
+  File                                   Size              Gzipped
+
+  dist/js/chunk-vendors.21b44042.js      205.18 KiB        67.57 KiB
+  dist/workbox-d169e1d7.js               14.06 KiB         4.89 KiB
+  dist/js/app.417bf278.js                6.63 KiB          3.04 KiB
+  dist/service-worker.js                 1.35 KiB          0.81 KiB
+  dist/js/978.fe54fb48.js                0.40 KiB          0.31 KiB
+  dist/css/chunk-vendors.1afdac86.css    304.42 KiB        43.64 KiB
+  dist/css/app.0541e1ac.css              3.14 KiB          0.99 KiB
+
+  Images and other types of assets omitted.
+  Build at: 2026-08-14T03:23:13.635Z - Hash: d13a8a5a9a12c058 - Time: 17111ms
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+       

@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="layout">
+    <SideBar />
+    <main class="main">
+      <h1>Home</h1>
+      <p>Área principal. Selecione uma opção no menu à esquerda.</p>
+    </main>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import SideBar from '@/components/SideBar.vue'
 </script>
+
+<style scoped>
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+.main {
+  flex: 1;
+  padding: 20px;
+}
+</style>
